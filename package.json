@@ -9,6 +9,7 @@
   "author": "juraci.vieira@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^3.5.0",
     "cucumber": "^2.0.0-rc.6"
   }
 }
