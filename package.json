@@ -1,0 +1,11 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "spike cucumber.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber.js"
+  },
+  "author": "juraci.vieira@gmail.com",
+  "license": "ISC"
+}
