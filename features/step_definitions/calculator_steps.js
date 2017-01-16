@@ -1,11 +1,22 @@
+var { expect }  = require('chai');
 var { defineSupportCode } = require('cucumber');
 var Calculator = require('../../lib/Calculator');
 
 defineSupportCode(function({ Given, When, Then }) {
+  var calculator = new Calculator();
 
   Given(/^the input "(\S+)"$/, function(value, callback) {
-    var calculator = new Calculator();
     calculator.input(value);
+    callback();
+  });
+
+  When(/^the calculator is run$/, function (callback) {
+    calculator.run();
+    callback();
+  });
+
+  Then(/^the output should be "(\d+)"$/, function (total, callback) {
+    expect(calculator.total()).to.be.equal(total);
     callback();
   });
 
