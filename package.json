@@ -7,5 +7,8 @@
     "test": "cucumber.js"
   },
   "author": "juraci.vieira@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^2.0.0-rc.6"
+  }
 }
