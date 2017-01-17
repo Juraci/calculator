@@ -2,8 +2,12 @@ var { expect }  = require('chai');
 var { defineSupportCode } = require('cucumber');
 var Calculator = require('../../lib/Calculator');
 
-defineSupportCode(function({ Given, When, Then }) {
-  var calculator = new Calculator();
+defineSupportCode(function({ Given, When, Then, Before }) {
+  var calculator;
+
+  Before(function() {
+    calculator = new Calculator();
+  });
 
   Given(/^the input "(\S+)"$/, function(value, callback) {
     calculator.input(value);
