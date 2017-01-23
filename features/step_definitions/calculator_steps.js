@@ -20,7 +20,7 @@ defineSupportCode(function({ Given, When, Then, Before }) {
   });
 
   Then(/^the output should be "(\d+)"$/, function (total, callback) {
-    expect(calculator.total()).to.be.equal(total);
+    expect(calculator.getTotal()).to.be.equal(total);
     callback();
   });
 
