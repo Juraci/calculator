@@ -4,7 +4,8 @@
   "description": "spike cucumber.js",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber.js"
+    "test": "cucumber.js",
+    "dry:run": "cucumber.js --dry-run"
   },
   "author": "juraci.vieira@gmail.com",
   "license": "ISC",
